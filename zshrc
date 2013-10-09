@@ -50,3 +50,7 @@ zstyle ':completion:*' verbose true
 
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -a -u $USER -o pid,%cpu,args'
+
+__git_files () { 
+    _wanted files expl 'local files' _files     
+}
