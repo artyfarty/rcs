@@ -4,6 +4,8 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 bindkey -e
+bindkey "^[[A" history-search-backward
+bindkey "^[[B" history-search-forward
 
 autoload -Uz compinit && compinit
 autoload -U colors && colors
